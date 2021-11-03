@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 
 import Head from 'next/head'
-import Swipers from './Swipers.js'
+// import Swipers from './Swipers.js'
 import Header from './Header.js'
 
 
@@ -19,7 +19,7 @@ export default function Home() {
    
        
         <Header></Header>
-        <Swipers></Swipers>
+        {/* <Swipers></Swipers> */}
       
 
      
