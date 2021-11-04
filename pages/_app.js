@@ -1,7 +1,7 @@
 
 import "../styles/globals.css";
 import TransitionLayout from "../component/Layout";
-import Navigation from "../component/Navigation.js";
+// import Navigation from "../component/Navigation.js";
 
 // import Home from "./index";
 // import Swipers from "./Swipers";
