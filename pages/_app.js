@@ -1,11 +1,18 @@
 
 import "../styles/globals.css";
-import Home from "./index";
-import Swipers from "./Swipers";
+import TransitionLayout from "../component/Layout";
+import Navigation from "../component/Navigation.js";
+
+// import Home from "./index";
+// import Swipers from "./Swipers";
 function MyApp({ Component, pageProps }) {
   return (
     <div>
-      <Component {...pageProps} />
+       <TransitionLayout>
+        
+        <Component {...pageProps} />
+      </TransitionLayout>
+      {/* <Component {...pageProps} /> */}
       {/* <Home />
 	  <Swipers /> */}
     </div>

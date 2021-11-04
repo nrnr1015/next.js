@@ -115,12 +115,4 @@ html,
         
 
       li {list-style-type: none;}
-      .nav {position: fixed;
-        top: 50px;
-        right: 45px;
-        z-index: 9999;
-        -webkit-transition: opacity 2s;
-        transition: opacity 2s;}
-      .nav ul {display: flex}
-      .nav ul li {padding: 0 15px}
-      .nav ul li a {display: block;}
+      

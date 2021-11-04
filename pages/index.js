@@ -1,10 +1,9 @@
-import React, { useRef, useState } from "react";
-
+import React from 'react';
+import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
+import { PageTransition } from '@steveeeie/react-page-transition'
 import Head from 'next/head'
+import Swiper from 'swiper';
 import Swipers from './Swipers.js'
-import Header from './Header.js'
-
-
 export default function Home() {
   
   return (
@@ -12,16 +11,9 @@ export default function Home() {
       <Head>
         <title>nrnr</title>
         <link rel="icon" href="/favicon.ico" />
-        {/* <link rel="stylesheet" href="/components/style.css" /> */}
-
       </Head>
 
-   
-       
-        <Header></Header>
-        <Swipers></Swipers>
-      
-
+      <Swipers />
      
     </div>
   )
