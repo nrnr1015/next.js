@@ -1,0 +1,20 @@
+.nav {position: fixed;
+        top: 50px;
+        right: 45px;
+        z-index: 9999;
+        -webkit-transition: opacity 2s;
+        transition: opacity 2s;}
+	.nav a {display: inline-block; padding: 0 15px}
+  .content {
+	opacity: 0;
+	background-color: #ececec;
+	transition: .8s;
+	height: calc(100vh - 4em);
+	overflow: auto;
+	padding: 1em;
+  }
+  
+  .fadeIn {
+	opacity: 1;
+  }
+  
