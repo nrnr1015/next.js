@@ -1,15 +1,14 @@
 import React, { useRef, useState } from "react";
 import { pages } from "../data/pages";
 
-export default function About() {
+export default function Contact() {
 
   return (
     <>
         
         
         <div className="contents">
-          <h1 className="title">ABOUT</h1>
-          
+          <h1 className="title">Contact</h1>
         </div>
     </>
     

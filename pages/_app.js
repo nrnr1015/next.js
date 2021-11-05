@@ -7,7 +7,7 @@ import TransitionLayout from "../component/Layout";
 // import Swipers from "./Swipers";
 function MyApp({ Component, pageProps }) {
   return (
-    <div>
+    <div className="container">
        <TransitionLayout>
         
         <Component {...pageProps} />

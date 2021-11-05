@@ -1,8 +1,8 @@
 import Link from "next/link";
+import React, { Children } from 'react'
 import { useState, memo, useEffect } from "react";
 import styles from "./Layout.module.css";
-import { pages } from "../data/pages";
-
+import Nav from "./Navigation.js"
 
 export default function TransitionLayout({ children }) {
   const [displayChildren, setDisplayChildren] = useState(children);
@@ -14,21 +14,15 @@ export default function TransitionLayout({ children }) {
   useEffect(() => {
     if (children !== displayChildren) setTransitionStage("fadeOut");
   }, [children, setDisplayChildren, displayChildren]);
+
   return (
     
     <div>
-      <nav className={styles.nav}>
-          {pages.map((page, index) => (
-            <Link href={page.path} onClick={page.onClick} key={index} >
-              {page.title}
-            </Link>
-          ))}
-      </nav>
+      <Nav />
       
       <div
         onTransitionEnd={() => {
           if (transitionStage === "fadeOut") {
-            console.log("fading out");
             setDisplayChildren(children);
             setTransitionStage("fadeIn");
           }
