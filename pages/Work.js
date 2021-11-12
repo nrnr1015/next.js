@@ -3,7 +3,6 @@ import Link from 'next/link'
 import Fade from "react-reveal/Fade";
 
 import Typewriter from "typewriter-effect";
-import Future from "../component/Future";
 import Typrtwriter from "../component/Typrtwriter";
 import Swipers from "../component/Swipers";
 
