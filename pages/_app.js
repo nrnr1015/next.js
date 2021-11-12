@@ -1,5 +1,8 @@
 
 import "../styles/globals.css";
+// import "../styles/style.css";
+// import "../styles/olie.css";
+
 import TransitionLayout from "../component/Layout";
 // import Navigation from "../component/Navigation.js";
 

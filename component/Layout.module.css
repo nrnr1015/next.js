@@ -8,9 +8,8 @@
 
   .content {
 	opacity: 0;
-	background-color: #ececec;
 	transition: .8s;
-	height: calc(100vh - 4em);
+	height: 100%;
 	overflow: auto;
   }
   

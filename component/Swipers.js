@@ -1,5 +1,4 @@
 import React, { useRef, useState } from "react";
-import Head from 'next/head'
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -11,27 +10,28 @@ import "swiper/css/thumbs"
 
 // import Swiper core and required modules
 import SwiperCore, {
-  EffectCards,
-  Pagination,Navigation,
-  FreeMode,Thumbs
+  Pagination
 } from 'swiper';
 
-// install Swiper modules
-SwiperCore.use([EffectCards,Pagination,Navigation, FreeMode,Navigation,Thumbs]);
 
+// install Swiper modules
+// SwiperCore.use([EffectCards,Pagination,Navigation, FreeMode,Navigation,Thumbs]);
+SwiperCore.use([Pagination]);
 
 export default function Swipers() {
-  const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
   return (
-    <div className="container">
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <div className="content">
+    <div class="swiperContent">
         <Swiper 
+        slidesPerView={3} spaceBetween={30} 
+        pagination={{
+  "type": "progressbar",
+  "clickable": true
+}}className="mySwiper">
+  <SwiperSlide>Slide 1</SwiperSlide><SwiperSlide>Slide 2</SwiperSlide><SwiperSlide>Slide 3</SwiperSlide><SwiperSlide>Slide 4</SwiperSlide><SwiperSlide>Slide 5</SwiperSlide><SwiperSlide>Slide 6</SwiperSlide><SwiperSlide>Slide 7</SwiperSlide><SwiperSlide>Slide 8</SwiperSlide><SwiperSlide>Slide 9</SwiperSlide>
+  </Swiper>
+
+        {/* <Swiper 
           slidesPerView={1} 
           spaceBetween={1000} 
           loop={true} 
@@ -66,8 +66,7 @@ export default function Swipers() {
           <SwiperSlide>Slide 8</SwiperSlide>
           <SwiperSlide>Slide 9</SwiperSlide>
           <SwiperSlide>Slide 10</SwiperSlide>
-        </Swiper>
-      </div>
+        </Swiper> */}
       
 
     </div>
