@@ -7,7 +7,7 @@ import About from './About.js'
 export default function Home() {
   
   return (
-    <div className="container">
+    <div className="container2">
       <Head>
         <title>nrnr</title>
         <link rel="icon" href="/favicon.ico" />

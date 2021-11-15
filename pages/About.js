@@ -1,7 +1,5 @@
 import React, { useRef, useState } from "react";
-import { pages } from "../data/pages";
 import Footer from "../component/Footer";
-import Fade from "react-reveal/Fade";
 import Typrtwriter from "../component/Typrtwriter";
 import Intro from "../component/Intro";
 
