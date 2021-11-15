@@ -21,7 +21,7 @@ SwiperCore.use([Pagination]);
 export default function Swipers() {
 
   return (
-    <div class="swiperContent">
+    <div className="swiperContent">
         <Swiper 
         slidesPerView={3} spaceBetween={30} 
         pagination={{

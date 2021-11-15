@@ -1,6 +1,9 @@
-.nav {position: fixed;
-        top: 50px;
-        right: 45px;
+.nav {
+  position: fixed;
+  margin-top: 10vh;
+  top: 0;
+  right: 0;
+  transform: rotate(90deg);
         z-index: 9999;
         -webkit-transition: opacity 2s;
         transition: opacity 2s;}

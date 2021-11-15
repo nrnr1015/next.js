@@ -1,10 +1,9 @@
 import Link from "next/link";
-import React, { Children } from 'react'
+import React from 'react'
 import { useState, memo, useEffect } from "react";
 import styles from "./Layout.module.css";
 import Nav from "./Navigation.js"
-import { Timeline, Controls, Tween } from "react-gsap";
-import { Controller, Scene } from "react-scrollmagic";
+import { Timeline , Tween } from "react-gsap";
 
 export default function TransitionLayout({ children }) {
   const [displayChildren, setDisplayChildren] = useState(children);
@@ -25,8 +24,7 @@ export default function TransitionLayout({ children }) {
           <Timeline
             target={
               <>
-                <div className="logo">Phone Company</div>
-                
+                <div className="logo">NRNR</div>
               </>
             }
           >

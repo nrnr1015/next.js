@@ -1,18 +1,17 @@
 import React, { useRef, useState } from "react";
 import Typewriter from "typewriter-effect";
+import Fade from "react-reveal/Fade";
 
 
 export default function Typrtwriter() {
 
   return (
     <>
-        
-        
-        <div className="sub-heading">
-			<h1>
+		<Fade bottom>
+			<h1 className="header-title">
 				<Typewriter
 				options={{
-					strings: ["안녕하세요", "이나련입니다."],
+					strings: ["안녕하세요", "이나련입니다"],
 					autoStart: true,
 					loop: true,
 					delay: 100,
@@ -20,10 +19,10 @@ export default function Typrtwriter() {
 					start: 3000,
 				}}
 				/>
+				<span>UI  Markup Developer.</span>
 			</h1>
-		</div>
+		</Fade>
     </>
-    
   )
 }
 

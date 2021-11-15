@@ -11,17 +11,17 @@ export const pages = [
 	  title: "ABOUT",
 	  color: "#4caf50"
 	},
-	{
-		id : 2,
-	  path: "/Careers",
-	  title: "CAREERS",
-	  color: "#666"
-	},
-	{
-		id : 3,
-	  path: "/Contact",
-	  title: "CONTACT",
-	  color: "#ccc"
-	}
+	// {
+	// 	id : 2,
+	//   path: "/Careers",
+	//   title: "CAREERS",
+	//   color: "#666"
+	// },
+	// {
+	// 	id : 3,
+	//   path: "/Contact",
+	//   title: "CONTACT",
+	//   color: "#ccc"
+	// }
   ];
   

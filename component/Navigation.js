@@ -3,7 +3,8 @@ import { pages } from "../data/pages";
 import styles from "./Layout.module.css";
 
 const Nav = () => (
-  <nav className={styles.nav} >
+  <div className="nav_wrapper">
+    <nav className={styles.nav} >
     <style jsx>{`
       .nav-link {
         text-decoration: none;
@@ -23,6 +24,8 @@ const Nav = () => (
           </ActiveLink>
         ))}
     </nav>
+  </div>
+  
 )
 
 export default Nav
