@@ -6,7 +6,7 @@ import Intro from "../component/Intro";
 export default function About() {
 
   return (
-    <>
+    <div className="container">
       <div className="header-container">
         <div className="header-wrapper">
           
@@ -50,6 +50,6 @@ export default function About() {
         </section>
         <Footer />
       </div>
-    </>
+    </div>
   )
 }

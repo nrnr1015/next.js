@@ -8,10 +8,9 @@ import Intro from "../component/Intro";
 export default function Work() {
 
   return (
-    <>
+    <div className="container">
         <div className="header-container">
 			<div className="header-wrapper">
-				{/* <Typrtwriter></Typrtwriter> */}
 				<Fade bottom>
 					<h1 className="header-title">
 						<span>dd.</span>
@@ -73,7 +72,7 @@ export default function Work() {
 			</div>
 			<Footer />
         </div>
-    </>
+    </div>
     
   )
 }

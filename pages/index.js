@@ -7,7 +7,7 @@ import About from './About.js'
 export default function Home() {
   
   return (
-    <div className="container2">
+    <div>
       <Head>
         <title>nrnr</title>
         <link rel="icon" href="/favicon.ico" />
@@ -18,7 +18,6 @@ export default function Home() {
         <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
       </Head>
       <Work></Work>
-      <About></About>
     </div>
   )
 }
