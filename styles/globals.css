@@ -1,3 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+#__next {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  color: #fff;
+}
+
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,
 small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,
 aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,
@@ -17,8 +27,7 @@ nav,section {
 body {
   line-height: 1;
 }
-ol,
-ul {
+ol,ul {
   list-style: none;
 }
 blockquote,
@@ -48,8 +57,8 @@ a:link, a:visited, a:hover, a:active {
     color: inherit;
 }
 h1 {margin: 0;}
-#__next .container {height: 100%;}
-.container {margin-top: 10vh;}
+.container {height: 100%;}
+/* .container {margin-top: 10vh;} */
 .container .contents {    
   position: relative;
   height: 100%;
@@ -66,10 +75,15 @@ header {
 }
 .nav_wrapper {max-width: 1600px; position: relative;}
 .logo{
-  
+  color: #fff;
+  font-size: 30px;
 }
 
 .header-container {
+ 
+}
+
+.content-container {
   width: 100%;
   margin-top: 30vh;
   display: -moz-box;
@@ -77,19 +91,23 @@ header {
   -moz-box-orient: vertical;
   -moz-box-direction: normal;
   flex-direction: column;
-  margin: auto;
 }
-
-
-.header-container .header-title {
-  max-width: 1600px;
+.header-wrapper {
+  margin-top: 20vh;
+}
+.header-wrapper ,
+.work-container {
+  width: 1400px;
+  margin: auto;
+  padding: 0 20px;
+}
+.header-title {
   font-size: 5.5rem;
-  margin: 0;
   padding: 0;
   overflow: hidden;
   margin: auto;
 }
-.header-container .header-title > span {display: block;}
+.header-title > span {display: block;}
 
 .navigation-email a {
   font-size: 1.2rem;
@@ -102,19 +120,19 @@ header {
   font-weight: bold;
   line-height: 1.3;
 }
-.header-container .header-info-wrapper .content-wrapper {
+.header-info-wrapper .content-wrapper {
   display: -moz-box;
   display: flex;
   -moz-box-orient: vertical;
   -moz-box-direction: normal;
   flex-direction: column;
 }
-.header-container .header-info-wrapper .content-wrapper span {
+.header-info-wrapper .content-wrapper span {
   font-size: 1.5rem;
   line-height: 1.3;
 }
 
-.header-container .header-info-wrapper {
+.header-info-wrapper {
   max-width: 1600px;
   display: -moz-box;
   display: flex;
@@ -125,34 +143,33 @@ header {
   justify-content: space-between;
   margin: 10vh auto 0;
 }
-.header-container .header-info-wrapper .navigation-wrapper {
+.header-info-wrapper .navigation-wrapper {
   display: -moz-box;
   display: flex;
   -moz-box-orient: vertical;
   -moz-box-direction: normal;
   flex-direction: column;
 }
-.header-container .header-info-wrapper .content-wrapper {
+.header-info-wrapper .content-wrapper {
   display: -moz-box;
   display: flex;
   -moz-box-orient: vertical;
   -moz-box-direction: normal;
   flex-direction: column;
 }
-.header-container .header-info-wrapper .content-wrapper p {
+.header-info-wrapper .content-wrapper p {
   font-size: 1.5rem;
 }
-.header-container .header-info-wrapper .content-wrapper nav {
+.header-info-wrapper .content-wrapper nav {
   margin-top: 20px;
   display: -moz-box;
   display: flex;
 }
-.header-container .header-info-wrapper .navigation-wrapper .navigation-content {
+.header-info-wrapper .navigation-wrapper .navigation-content {
   margin-top: 20px;
 }
 
 .work-container {
-  width: 100%;
   margin-top: 15vh;
   display: -moz-box;
   display: flex;
@@ -165,10 +182,10 @@ header {
   justify-content: center;
 }
 .work-container .grid-wrapper {
-  width: 90%;
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
+  grid-gap: 50px;
 }
 .work-container .project-item {
   width: 100%;
@@ -179,7 +196,7 @@ header {
   color: #000;
 }
 .work-container .project-item .image-wrapper {
-  height: 800px;
+  border-radius: 40px;
   overflow: hidden;
   position: relative;
 }
@@ -189,11 +206,13 @@ header {
   overflow: hidden;
   position: relative;
   text-decoration: none;
-  color: #000;
+  font-size: 1.5em;
+  color: #fff;
 }
 .work-container .project-item .image-wrapper img {
   width: 100%;
   height: 100%;
+  border-radius: 40px;
   object-fit: cover;
   -webkit-transition: all .7s cubic-bezier(.445,.05,.55,.95);
   -moz-transition: all .7s cubic-bezier(.445,.05,.55,.95);
@@ -216,15 +235,19 @@ header {
   transform: scale(1.2);
   opacity: .8;
 }
-.work-container .project-item .image-wrapper:hover h1 {
-  font-size: 3rem;
+.work-container .project-item .image-wrapper h1 {
   position: absolute;
   left: 50%;
   top: 50%;
+  font-size: 1.5em;
   -webkit-transform: translate(-50%);
   -moz-transform: translate(-50%);
   transform: translate(-50%);
   cursor: pointer;
+  display: none;
+}
+.work-container .project-item .image-wrapper:hover h1 {
+  display: block;
 }
 
 
@@ -247,7 +270,6 @@ header {
 .footer {
   margin-top: 200px;
   width: 100%;
-  background-color: #fafafa;
   padding-top: 100px;
   padding-bottom: 140px;
   overflow-x: hidden;
@@ -257,7 +279,6 @@ header {
 .footer .footer-content {
   display: flex;
   justify-content: center;
-  
   position: relative;
   width: 100%;
   margin: 0 auto;
@@ -384,7 +405,6 @@ margin-left: -700px;
 .sns_footer_wrap {
   width: 100%;
   position: relative;
-  background-color: #fff;
   font-weight: 400;
   font-family: montserrat,AppleGothic,sans-serif,Helvetica;
 }
@@ -534,16 +554,13 @@ justify-content: space-between;
   line-height: 1.95;
 }
 @media (min-width: 1024px) and (max-width: 1279px) {
-  .header-container .header-info-wrapper .navigation-wrapper .navigation-content h1 {
+  .header-info-wrapper .navigation-wrapper .navigation-content h1 {
     font-size: 2.5rem;
     line-height: 40px;
   }
   .navigation-wrapper .navigation-content h1 {
     font-size: 2.5rem;
     line-height: 40px;
-  }
-  .work-container .project-item .image-wrapper {
-    height: 500px;
   }
   .skill__title {
     font-size: 46px;
@@ -559,11 +576,19 @@ justify-content: space-between;
     font-size: 18px;
   }
 }
+.workSpace { 
+  background: #fff;
+  margin: 20vh 0 0 ;
+}
+.workSpace_inner {
+  max-width: 1200px;
+  padding: 0 40px;
+  margin: auto;
+}
+.workSpace img {width: 100%; vertical-align: top;}
 
 @media (min-width: 320px) and (max-width: 424px) {
-  .work-container .project-item .image-wrapper {
-    height: 400px;
-  }
+  
   .work-container .project-item .image-wrapper:hover h1 {
     font-size: 1.5rem;
   }

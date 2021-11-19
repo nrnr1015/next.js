@@ -1,4 +1,6 @@
 import Link from "next/link";
+import Head from 'next/head'
+
 import React from 'react'
 import { useState, memo, useEffect } from "react";
 import styles from "./Layout.module.css";
@@ -17,14 +19,27 @@ export default function TransitionLayout({ children }) {
   }, [children, setDisplayChildren, displayChildren]);
 
   return (
-    
-    <div>
+    <>
+      <Head>
+        <title>nrnr</title>
+        <link rel="icon" href="/favicon.ico" />
+        <meta http-equiv="Content-Type"		content="text/html; charset=UTF-8" />
+        <meta http-equiv="Pragma" content="no-cache" />
+        <meta http-equiv="Cache-Control"	content="no-cache" />
+        <meta http-equiv="X-UA-Compatible"	content="IE=edge" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+      </Head>
 
-        <header>
+
+      <header>
           <Timeline
             target={
               <>
-                <div className="logo">NRNR</div>
+              <Link href="/">
+                <a>
+                  <div className="logo">NRNR</div>
+                </a>
+                </Link>  
               </>
             }
           >
@@ -36,12 +51,9 @@ export default function TransitionLayout({ children }) {
               duration={1.3}
               position="start"
             />
-            
           </Timeline>
-        </header>
-        <Nav/>
-            
-      
+      </header>
+      <Nav/>
       <div
         onTransitionEnd={() => {
           if (transitionStage === "fadeOut") {
@@ -53,6 +65,8 @@ export default function TransitionLayout({ children }) {
       >
         {displayChildren}
       </div>
-    </div>
+    </>
+    
+    
   );
 }

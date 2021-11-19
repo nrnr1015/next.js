@@ -4,10 +4,15 @@
   top: 0;
   right: 0;
   transform: rotate(90deg);
-        z-index: 9999;
-        -webkit-transition: opacity 2s;
-        transition: opacity 2s;}
-	.nav a {display: inline-block; margin: 0 15px; padding-bottom: 3px;}
+  z-index: 9999;
+  -webkit-transition: opacity 2s;
+  transition: opacity 2s;}
+	
+  .nav a {
+    display: inline-block; 
+    margin: 0 15px; 
+    padding-bottom: 3px;
+  }
 
   .content {
 	opacity: 0;

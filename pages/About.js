@@ -6,18 +6,14 @@ import Intro from "../component/Intro";
 export default function About() {
 
   return (
-    <div className="container">
-      <div className="header-container">
+    <div className="content-container">
         <div className="header-wrapper">
           
           <Typrtwriter />
           <Intro />
-
-          
         </div>
-      </div>
-      <div className="contents">
-        <section className="work">
+
+        <section className="work-container work">
           <article className="skill">
             <div className="skill__inner">
               <h3 className="skill__title">
@@ -49,7 +45,6 @@ export default function About() {
           </article>
         </section>
         <Footer />
-      </div>
     </div>
   )
 }
