@@ -23,24 +23,25 @@ const Footer = () => (
 				<a target="_blank" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=nykim@nykim.net" className="contact__mail">llr2916@naver.com</a>
 				<p className="contact__text">어떤 내용이여도 좋아요!&nbsp;<br className="br-mobile" />메일을 보내주시면 평일 기준 3일 내로 답장을 드릴게요.</p>
 			</div>	
-		</div>
-
-		<div className="sns_footer_wrap">
-			<div className="sns_footer">
-				<div className="sns">
-					<a href="/" target="__blank" className="sns__link sns__link--github">
-						<span className="blind">Githud</span> 
-					</a>
-					<a href="/" target="__blank" className="sns__link sns__link--blog">
-						<span className="blind">Blog</span>
-					</a>
-				</div>
-				<div className="footer__copyright">© 2021 NRNR</div>
-				<div className="footer__madeby">Made by NRNR 
-					<i className="icon icon--heart">&#128400;</i>
+			<div className="sns_footer_wrap">
+				<div className="sns_footer">
+					<div className="sns">
+						<a href="/" target="__blank" className="sns__link sns__link--github">
+							<span className="blind">Githud</span> 
+						</a>
+						<a href="/" target="__blank" className="sns__link sns__link--blog">
+							<span className="blind">Blog</span>
+						</a>
+					</div>
+					<div className="footer__copyright">© 2022 NRNR</div>
+					<div className="footer__madeby">Made by NRNR 
+						<i className="icon icon--heart">&#128400;</i>
+					</div>
 				</div>
 			</div>
 		</div>
+
+		
 	</>
 ) 
 export default Footer

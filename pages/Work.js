@@ -1,21 +1,17 @@
 import React, { useRef, useState } from "react";
 import Link from 'next/link'
 import Fade from "react-reveal/Fade";
-import Footer from "../component/Footer";
+import Typrtwriter from "../component/Typrtwriter";
 import Intro from "../component/Intro";
+import Footer from "../component/Footer";
+
 
 export default function Work() {
 
   return (
 	<div className="content-container">
 		<div className="header-wrapper">
-			<Fade bottom>
-				<h1 className="header-title">
-					<span>dd.</span>
-					<span>ddd.</span>
-				</h1>
-			</Fade>	
-			
+			<Typrtwriter />
 			<Intro />
 		</div>
 		
@@ -24,21 +20,20 @@ export default function Work() {
 
 				<Fade bottom>
 					<Link href="/Work/Meatbox">
-						<a className="project-item">
+						<a className="project-item item1">
 							<div className="image-wrapper">
 								<img src="/meatboxThm.jpg" />
-								<h1>View Project</h1>
-							</div>
-							<div className="project-content">
-								<div className="shift-line">
-									<h1>MEATBOX Mobile</h1>
+								<div className="project-content">
+									<span>유지보수&amp;리뉴얼</span>
+									<h2>MEATBOX Mobile</h2>
+									<span># html5&amp;# css&amp;# jquery&amp; #javascript</span>
 								</div>
-								<h2>퍼블리싱 100%</h2>
 							</div>
+							
 						</a>
 					</Link>
 					<Link href="/">
-					<a className="project-item">
+					<a className="project-item item2">
 							<div className="image-wrapper">
 								<img src="https://images.unsplash.com/photo-1483000805330-4eaf0a0d82da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80" />
 								<h1>View Project</h1>
@@ -52,7 +47,35 @@ export default function Work() {
 						</a>
 					</Link>
 					<Link href="/">
-					<a className="project-item">
+					<a className="project-item item3">
+							<div className="image-wrapper">
+								<img src="https://images.unsplash.com/photo-1483000805330-4eaf0a0d82da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80" />
+								<h1>View Project</h1>
+							</div>
+							<div className="project-content">
+								<div className="shift-line">
+									<h1>Loud Army</h1>
+								</div>
+								<h2>Design &amp; Development</h2>
+							</div>
+						</a>
+					</Link>
+					<Link href="/">
+					<a className="project-item item3">
+							<div className="image-wrapper">
+								<img src="https://images.unsplash.com/photo-1483000805330-4eaf0a0d82da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80" />
+								<h1>View Project</h1>
+							</div>
+							<div className="project-content">
+								<div className="shift-line">
+									<h1>Loud Army</h1>
+								</div>
+								<h2>Design &amp; Development</h2>
+							</div>
+						</a>
+					</Link>
+					<Link href="/">
+					<a className="project-item item3">
 							<div className="image-wrapper">
 								<img src="https://images.unsplash.com/photo-1483000805330-4eaf0a0d82da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80" />
 								<h1>View Project</h1>

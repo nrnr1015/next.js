@@ -31,28 +31,6 @@ export default function TransitionLayout({ children }) {
       </Head>
 
 
-      <header>
-          <Timeline
-            target={
-              <>
-              <Link href="/">
-                <a>
-                  <div className="logo">NRNR</div>
-                </a>
-                </Link>  
-              </>
-            }
-          >
-            <Tween
-              target={0}
-              from={{ x: "-200px", opacity: 0 }}
-              to={{ x: "0px", opacity: 1 }}
-              delay={0.5}
-              duration={1.3}
-              position="start"
-            />
-          </Timeline>
-      </header>
       <Nav/>
       <div
         onTransitionEnd={() => {

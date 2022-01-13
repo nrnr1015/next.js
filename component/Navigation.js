@@ -15,7 +15,7 @@ const Nav = () => (
       }
 
       .active{
-        border-bottom: 2px solid #fff;
+        border-bottom: 2px solid #ffe600;
       }
     `}</style>
         {pages.map((page, index) => (
