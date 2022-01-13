@@ -29,7 +29,18 @@ export default function Work() {
 									<span># html5&amp;# css&amp;# jquery&amp; #javascript</span>
 								</div>
 							</div>
-							
+						</a>
+					</Link>
+					<Link href="/Work/sellerApp">
+						<a className="project-item item1">
+							<div className="image-wrapper">
+								<img src="/sellerApp.jpg" />
+								<div className="project-content">
+									<span>2022</span>
+									<h2>미트박스 판매자 Web/App</h2>
+									<span># html5&amp;# css&amp;# jquery&amp; #javascript</span>
+								</div>
+							</div>
 						</a>
 					</Link>
 					<Link href="/">
