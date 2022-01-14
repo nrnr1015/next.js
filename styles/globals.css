@@ -168,8 +168,8 @@ header {
   display: flex;
 }
 .work-container {
-  margin-top: 40vh;
-  padding: 0 10%;
+  margin-top: 20vh;
+  padding: 0 10% 10%;
   display: -moz-box;
   display: flex;
   -moz-box-orient: vertical;
@@ -296,10 +296,9 @@ header {
 
 
 .footer {
-  margin-top: 200px;
   width: 100%;
-  padding-top: 100px;
-  padding-bottom: 140px;
+  padding-top: 20vh;
+  padding-bottom: 10%;
   overflow-x: hidden;
 
 }
@@ -499,9 +498,6 @@ justify-content: space-between;
 
 .work {
   position: relative;
-  overflow-x: hidden;
-  padding: 80px 0 80px;
-  background: #414141;
 }
 .skill__inner {
   padding: 0 60px;

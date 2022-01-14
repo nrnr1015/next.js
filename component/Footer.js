@@ -26,10 +26,10 @@ const Footer = () => (
 			<div className="sns_footer_wrap">
 				<div className="sns_footer">
 					<div className="sns">
-						<a href="/" target="__blank" className="sns__link sns__link--github">
+						<a href="https://github.com/nrnr1015" target="__blank" className="sns__link sns__link--github">
 							<span className="blind">Githud</span> 
 						</a>
-						<a href="/" target="__blank" className="sns__link sns__link--blog">
+						<a href="https://www.notion.so/6b1062a4ecaf41b494962ae558e94331" target="__blank" className="sns__link sns__link--blog">
 							<span className="blind">Blog</span>
 						</a>
 					</div>
