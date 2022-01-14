@@ -6,7 +6,7 @@ export default function Meatbox() {
   return (
     <>
       <div class="workSpace">
-        <img src="/meatboxMobile.jpg" alt="ff"/>
+        <img src="/work/meatboxMobile.jpg" alt="미트박스"/>
       </div>    
     </>
   )

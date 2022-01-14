@@ -19,22 +19,10 @@ export default function Work() {
 			<div className="grid-wrapper">
 
 				<Fade bottom>
-					<Link href="/Work/Meatbox">
-						<a className="project-item item1">
-							<div className="image-wrapper">
-								<img src="/meatboxThm.jpg" />
-								<div className="project-content">
-									<span>유지보수&amp;리뉴얼</span>
-									<h2>MEATBOX Mobile</h2>
-									<span># html5&amp;# css&amp;# jquery&amp; #javascript</span>
-								</div>
-							</div>
-						</a>
-					</Link>
 					<Link href="/Work/sellerApp">
 						<a className="project-item item1">
 							<div className="image-wrapper">
-								<img src="/sellerApp.jpg" />
+								<img src="/thms/sellerApp.jpg" />
 								<div className="project-content">
 									<span>2022</span>
 									<h2>미트박스 판매자 Web/App</h2>
@@ -43,6 +31,19 @@ export default function Work() {
 							</div>
 						</a>
 					</Link>
+					<Link href="/Work/Meatbox">
+						<a className="project-item item1">
+							<div className="image-wrapper">
+								<img src="/thms/meatboxThm.jpg" />
+								<div className="project-content">
+									<span>유지보수&amp;리뉴얼</span>
+									<h2>MEATBOX Mobile</h2>
+									<span># html5&amp;# css&amp;# jquery&amp; #javascript</span>
+								</div>
+							</div>
+						</a>
+					</Link>
+					
 					<Link href="/">
 					<a className="project-item item2">
 							<div className="image-wrapper">
