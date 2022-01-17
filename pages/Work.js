@@ -19,7 +19,7 @@ export default function Work() {
 			<div className="grid-wrapper">
 
 				<Fade bottom>
-					<Link href="/Work/sellerApp">
+					<Link href="https://www.notion.so/6e46beb922614a41937a038918cc403e">
 						<a className="project-item item1">
 							<div className="image-wrapper">
 								<img src="/thms/sellerApp.jpg" />
@@ -44,7 +44,7 @@ export default function Work() {
 						</a>
 					</Link>
 					
-					<Link href="/Work/coxiThm">
+					<Link href="https://nrnr1015.github.io/coxi-html-mo-master">
 						<a className="project-item item1">
 							<div className="image-wrapper">
 								<img src="/thms/coxiThm.jpg" />
@@ -56,7 +56,7 @@ export default function Work() {
 							</div>
 						</a>
 					</Link>
-					<Link href="/Work/iblThm">
+					<Link href="https://nrnr1015.github.io/iblAdmin/">
 						<a className="project-item item1">
 							<div className="image-wrapper">
 								<img src="/thms/iblThm.jpg" />

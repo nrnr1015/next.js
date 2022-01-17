@@ -19,7 +19,7 @@ export default function Meatbox() {
       
       <div className="workSpace">
         <div className="workSpace_inner">
-          <img src="/meatboxMobile.jpg" alt="ff"/>  
+          <img src="/works/meatboxMobile.jpg" alt="ff"/>  
         </div>
       </div>    
     </div>
