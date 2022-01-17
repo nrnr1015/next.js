@@ -31,7 +31,7 @@ export default function Work() {
 							</div>
 						</a>
 					</Link>
-					<Link href="/Work/Meatbox">
+					<Link href="https://www.notion.so/MOBILE-WEB-dcc8f6a9f1374fb39bf3e8b8d7f21408">
 						<a className="project-item item1">
 							<div className="image-wrapper">
 								<img src="/thms/meatboxThm.jpg" />
