@@ -14,7 +14,7 @@ const Intro = () => (
 			<div className="content-wrapper">
 				<div class="contet-titles">
 					<span class="hello">반갑습니다!</span>
-					<span>저는 견고한 UI와 기억에 남는 UX를 만드는</span>
+					<span>저는 탄탄한 코드와 견고한 UI를 만드는</span>
 					<span><em>웹 퍼플리셔</em> 에요.</span>
 				</div>
 				<div class="contet-text">
