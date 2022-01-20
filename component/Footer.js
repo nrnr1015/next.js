@@ -29,7 +29,7 @@ const Footer = () => (
 						<a href="https://github.com/nrnr1015" target="__blank" className="sns__link sns__link--github">
 							<span className="blind">Github</span> 
 						</a>
-						<a href="https://www.notion.so/6b1062a4ecaf41b494962ae558e94331" target="__blank" className="sns__link sns__link--blog">
+						<a href="https://nrnr1015.notion.site/6b1062a4ecaf41b494962ae558e94331" target="__blank" className="sns__link sns__link--blog">
 							<span className="blind">Blog</span>
 						</a>
 					</div>

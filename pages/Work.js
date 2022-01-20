@@ -19,8 +19,8 @@ export default function Work() {
 			<div className="grid-wrapper">
 
 				<Fade bottom>
-					<Link href="https://www.notion.so/6e46beb922614a41937a038918cc403e">
-						<a className="project-item item1">
+					<Link href="https://nrnr1015.notion.site/6e46beb922614a41937a038918cc403e">
+						<a target="_blank" className="project-item item1">
 							<div className="image-wrapper">
 								<img src="/thms/sellerApp.jpg" />
 								<div className="project-content">
@@ -31,8 +31,8 @@ export default function Work() {
 							</div>
 						</a>
 					</Link>
-					<Link href="https://www.notion.so/MOBILE-WEB-dcc8f6a9f1374fb39bf3e8b8d7f21408">
-						<a className="project-item item1">
+					<Link href="https://nrnr1015.notion.site/MOBILE-WEB-dcc8f6a9f1374fb39bf3e8b8d7f21408">
+						<a target="_blank" className="project-item item1">
 							<div className="image-wrapper">
 								<img src="/thms/meatboxThm.jpg" />
 								<div className="project-content">
@@ -45,7 +45,7 @@ export default function Work() {
 					</Link>
 					
 					<Link href="https://nrnr1015.github.io/coxi-html-mo-master">
-						<a className="project-item item1">
+						<a target="_blank" className="project-item item1">
 							<div className="image-wrapper">
 								<img src="/thms/coxiThm.jpg" />
 								<div className="project-content">
@@ -57,7 +57,7 @@ export default function Work() {
 						</a>
 					</Link>
 					<Link href="https://nrnr1015.github.io/iblAdmin/">
-						<a className="project-item item1">
+						<a target="_blank" className="project-item item1">
 							<div className="image-wrapper">
 								<img src="/thms/iblThm.jpg" />
 								<div className="project-content">
