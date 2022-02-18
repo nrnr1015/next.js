@@ -2,7 +2,7 @@ const Intro = () => (
 	<>
 		<div className="header-info-wrapper">
 			<div className="navigation-wrapper">
-			<div className="navigation-email"><a href="mailto:llr2916@naver.com">llr2916@naver.com</a></div>
+			<div className="navigation-email"><a href="https://nrnr1015.notion.site/">경력 기술서 : https://nrnr1015.notion.site/</a></div>
 				<ul className="navigation-content">
 					<li>/Web</li>
 					<li>/Mobile</li>
