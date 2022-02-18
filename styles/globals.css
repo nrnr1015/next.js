@@ -246,7 +246,7 @@ header {
     left: 0;
     top: 0;
     padding: 5%;
-    line-height: 1.5vw;
+    line-height: 1.5;
     font-size: 18px;
     opacity: 0;
 }
