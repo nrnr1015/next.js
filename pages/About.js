@@ -7,11 +7,7 @@ export default function About() {
 
   return (
     <div className="content-container">
-        <div className="header-wrapper">
-          
-          <Typrtwriter />
-          <Intro />
-        </div>
+        
 
         <section className="work-container work">
           <article className="skill">
@@ -44,6 +40,7 @@ export default function About() {
             </div>
           </article>
         </section>
+
         <Footer />
     </div>
   )
