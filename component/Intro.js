@@ -12,7 +12,7 @@ const Intro = () => (
 				</ul>
 			</div>
 			<div className="content-wrapper">
-				<div class="contet-titles">
+				<div class="contet-titles test">
 					<span class="hello">반갑습니다!</span>
 					<span>저는 탄탄한 코드와 견고한 UI를 만드는</span>
 					<span><em>웹 퍼플리셔</em> 에요.</span>
